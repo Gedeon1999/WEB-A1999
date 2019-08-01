@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/f1fedf774e.js"></script>
+		<title>Web Agency</title>
+	</head>
+
+	<body>
+		<header id="fixedHeader">
+			<img id="logo" alt="logo" src="images/logo.png">
+			<nav id="buttonGroup">
+				<button type="button"><a href="#Acceuil">Acceuil</a></button>
+				<button type="button"><a href="#Services">Services</a></button>
+				<button type="button"><a href="#Portfolio">Portfolio</a></button>
+				<button type="button"><a href="#Contact">Contact</a></button>
+			</nav>
+		</header>
+
+		<div id="page">
+			<section id="Acceuil">
+				<div id="sliderHoverContent">
+					<button class="sliderButtonL"></button>
+					<div class="sliderText">
+						<h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS<br> VOS PROJETS !</h1>
+						<p>Vous avez un projet web? La WebAgency vous aide à le réaliser!</p>
+						<div class="infoButton"><button><p>Plus d'infos</p></button></div>
+					</div>
+					<button class="sliderButtonR"></button>
+				</div>	
+			</section>
+			<section id="Services">
+				<header>
+					<h2>NOS SERVICES</h2>
+					<div id="Marge">
+						<div class="barMargeL"></div>
+						<div class="puceMarge"></div>
+						<div class="barMargeR"></div>
+					</div>
+					<p>Nous agissons sur plusieurs secteurs de manière à garantir le meilleur pour votre projet web.</p>
+				</header>
+				<div id="serviceContent">
+					<img class="asideImg" alt="Nos Services" src="images/main-feature.png">
+					<article>
+						<div id="puces">
+							<i class="fas fa-chart-line"><div class="orb"></div></i>
+							<i class="fas fa-cubes"><div class="orb"></div></i>
+							<i class="fas fa-chart-pie"><div class="orb"></div></i>
+						</div>
+						<ul id="serviceList">
+							<li>
+								<h3>UX design</h3>
+								<p>Mise en place d'une stratégie, structure et surface pour créer une maquette qui répond à vos besoins.</p>
+							</li>
+							<li>
+								<h3>UI design</h3>
+								<p>Nous vous accompagnons dans la mise en place d'une interface intuitive et agréable pour vos utilisateurs ou clients.</p>
+							</li>
+							<li>
+								<h3>SEO</h3>
+								<p>Nous vous aidons à optimiser votre projet web aux yeux des moteurs de recherche pour permettre la plus grande couverture possible.</p>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+			<section id="Portfolio">
+				<header>
+					<h2>NOS PROJETS</h2>
+					<div id="Marge">
+						<div class="barMargeL"></div>
+						<div class="puceMarge"></div>
+						<div class="barMargeR"></div>
+					</div>
+					<p>Voici quelques exemples de divers de nos travaux effectués pour nos clients travaillant dans différents secteurs.</p>
+				</header>
+				<div id="portfolioMenu">
+					<input name="radioMenu" class="menuRadio" id="menu1" type="radio" checked><label class="radioLabel" for="menu1">All Works</label></input>
+					<input name="radioMenu" class="menuRadio" id="menu2" type="radio"><label class="radioLabel" for="menu2">Creative</label></input>
+					<input name="radioMenu" class="menuRadio" id="menu3" type="radio"><label class="radioLabel" for="menu3">Corporate</label></input>
+					<input name="radioMenu" class="menuRadio" id="menu4" type="radio"><label class="radioLabel" for="menu4">Portfolio</label></input>
+				</div>
+				<div id="portfolioImages">
+					<img class="img1" src="images/portfolio/01.jpg">
+					<img class="img1" src="images/portfolio/02.jpg">
+					<img class="img1" src="images/portfolio/03.jpg">
+					<img class="img1" src="images/portfolio/04.jpg">
+					<img class="img1" src="images/portfolio/05.jpg">
+					<img class="img1" src="images/portfolio/06.jpg">
+					<img class="img1" src="images/portfolio/07.jpg">
+					<img class="img1" src="images/portfolio/08.jpg">
+					<img class="img1" src="images/portfolio/full.jpg">
+				</div>
+			</section>
+			<footer id="Contact">
+				<header>
+					<h2>NOUS CONTACTER</h2>
+					<div id="Marge">
+						<div class="barMargeL"></div>
+						<div class="puceMarge"></div>
+						<div class="barMargeR"></div>
+					</div>
+					<p>WebAgency SAS, 25 Rue d'Hauteville, 75010 Paris; Ouvert du Lundi au Vendredi de 10h à 18h.</p>
+				</header>
+					<div id="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4876.696152399024!2d2.348501430855858!3d48.87281321179033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e1!3m2!1sfr!2sfr!4v1564609018743!5m2!1sfr!2sfr"></iframe>
+				    </div>
+			</footer>
+		</div>
+	</body>

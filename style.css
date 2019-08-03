@@ -30,6 +30,10 @@
 		 url("fonts/glyphicons-halflings-regular.svg") format('svg');	
 }
 
+button:focus {
+	outline:0;
+}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -70,7 +74,7 @@ header p {
 	background-color: white;
 }
 
-#Marge {
+.Marge {
 	padding-top: 10px;
 	display: flex;
 	align-items: center;
@@ -129,30 +133,33 @@ header p {
 }
 
 #buttonGroup {
-
 	display: flex;
 	justify-content: space-around;
 	height: 100%;
 
 }
 
-#buttonGroup button, button a {
+#buttonGroup  a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	border: none;
 	background-color: white;
+	text-align: center;
+	align-self: center;
 	text-decoration: none;
 	font-size: 1em;
 	color: black;
-	height: 100%;
+	height: 96%;
 	width: 9vh;
 	font-family: robotoRegular, Arial, Serif;
 }
 
-#buttonGroup button:hover {
+#buttonGroup a:hover {
 
 	border-top-style: solid;
 	border-color: #5CADD3;
-	border-width: 2px;
-	padding-bottom: 1px;
+	border-width: 3px;
 }
 
 /*Section Acceuil*/
@@ -191,12 +198,12 @@ header p {
 	border-bottom-style: solid;
 }
 
-.infoButton button p {
+.infoButton button  {
 	margin: 0;
 	margin-top: 5px;
 	align-self: center;
 	font-family: robotoRegular;
-	font-size: 1em;
+	font-size: 0.9em;
 	text-align: center;
 	color: white;
 	margin-bottom: 5px;
@@ -319,9 +326,10 @@ header p {
 	display: flex;
 	right: 0;
 	flex-direction: column;
-	justify-content: space-between;
-	padding-bottom: 150px;
-	padding-top: 50px;
+	justify-content: space-around;
+	padding-bottom: 50px;
+	margin-top: 20px;
+	
 }
 
 #serviceContent i {
@@ -342,8 +350,10 @@ header p {
 }
 
 .orb {
-	position: absolute;
-	right: -6px;
+	display: inline-flex;
+	position: relative;
+	right: -65px;
+	bottom: 95px;
 	z-index: 1;
 	width: 12px;
 	height: 12px;
@@ -506,12 +516,12 @@ figcaption i::before {
 }
 /*Section Contact*/
 
-#Contact header {
+#Contact section {
 	text-align: center;
 	padding-bottom: 25px;
 }
 
-#Contact header p {
+#Contact section p {
 	font-size: 1em;
 }
 

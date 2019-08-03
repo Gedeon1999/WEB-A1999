@@ -198,6 +198,15 @@ header p {
 	border-bottom-style: solid;
 }
 
+#sliderBar {
+	width: 17%;
+	height: 8px;
+	background-color: #5CADD3;
+	position: absolute;
+	bottom: 106px;
+
+}
+
 .infoButton button  {
 	margin: 0;
 	margin-top: 5px;

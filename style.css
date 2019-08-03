@@ -28,8 +28,22 @@
 		 url("fonts/glyphicons-halflings-regular.eot") format('opentype'),
 		 url("fonts/glyphicons-halflings-regular.woff") format('woff'),
 		 url("fonts/glyphicons-halflings-regular.svg") format('svg');	
-
 }
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;  
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 
 body {
 	min-width: 920px;

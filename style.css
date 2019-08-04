@@ -75,6 +75,7 @@ header p {
 }
 
 .Marge {
+	padding: 18px;
 	padding-top: 10px;
 	display: flex;
 	align-items: center;
@@ -82,27 +83,19 @@ header p {
 	padding-bottom: 15px;
 }
 .puceMarge {
-	position: relative;
-	margin-top: 8px;
-	margin-bottom: 8px;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	background-color: #5CADD3;
 }
 
-.barMargeR {
+.barMargeR, .barMargeL {
 	margin-left: 5px;
 	width: 50px;
 	height: 1px;
 	background-color: #c7c7c7;
-}
-
-.barMargeL {
 	margin-right: 5px;
-	width: 50px;
-	height: 1px;
-	background-color: #c7c7c7;
+
 }
 
 #anchor1, #anchor2, #anchor3, #anchor4 {
@@ -150,9 +143,11 @@ header p {
 	text-decoration: none;
 	font-size: 1em;
 	color: black;
-	height: 96%;
-	width: 9vh;
+	height: 100%;
+	box-sizing: border-box;
+	width: 5.5em;
 	font-family: robotoRegular, Arial, Serif;
+	cursor: pointer;
 }
 
 #buttonGroup a:hover {
@@ -165,6 +160,8 @@ header p {
 /*Section Acceuil*/
 
 #Acceuil {
+	display: flex;
+	position: relative;
 	background-image: url("images/slider/bg1.jpg");
 	background-repeat: no-repeat;
 	background-size: 110% 100%;
@@ -203,11 +200,11 @@ header p {
 	height: 8px;
 	background-color: #5CADD3;
 	position: absolute;
-	bottom: 106px;
+	bottom: 0;
 
 }
 
-.infoButton button  {
+.infoButton button {
 	margin: 0;
 	margin-top: 5px;
 	align-self: center;
@@ -216,6 +213,7 @@ header p {
 	text-align: center;
 	color: white;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .sliderText strong {
@@ -224,6 +222,7 @@ header p {
 
 #sliderHoverContent {
 	position: absolute;
+	align-self: center;
 	bottom: 35%;
 	display: flex;
 	justify-content: space-between;
@@ -239,6 +238,7 @@ header p {
 
 .sliderButtonL, .sliderButtonR {
 	padding: 0;
+	cursor: pointer;
 }
 
 .sliderButtonL {
@@ -287,40 +287,28 @@ header p {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-bottom: 250px;
+	margin-bottom: 200px;
 	text-align: center;
-	margin-bottom: 50px;
-}
-
-#Services section {
 	margin-top: 50px;
-	display: flex;
-	justify-content: space-around;
 }
 
 .asideImg {
-	width: 35%;
-	height: 30%;
+	align-self: flex-start;
+	text-align: center;
+	max-width: 800px;
+	max-height: 400px;
 }
 
 #serviceContent {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 100px;
-
-}
-
-#serviceContent article {
-	width: 700px;
-	display: flex;
 }
 
 #serviceList {
-	width: 600px;
-	height: 600px;
-	right: 10%;
 	text-align: left;
 	list-style: none;
+	max-width: 800px;	
 }
 
 #serviceList p {
@@ -328,28 +316,18 @@ header p {
 }
 
 #serviceList li {
+	position: relative;
 	margin-bottom: 75px;
-}
-
-#puces {
-	display: flex;
-	right: 0;
-	flex-direction: column;
-	justify-content: space-around;
-	padding-bottom: 50px;
-	margin-top: 20px;
-	
 }
 
 #serviceContent i {
 	display: flex;
-	position: relative;
-	font-size: 2em;
-	color: #5CADD3;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding-top: 2%;
+	position: absolute;
+	left: -100px;
+	font-size: 2em;
+	line-height: 2.2;
+	color: #5CADD3;
 	width: 70px;
 	height: 70px;
 	border-style: solid;
@@ -359,10 +337,9 @@ header p {
 }
 
 .orb {
-	display: inline-flex;
-	position: relative;
-	right: -65px;
-	bottom: 95px;
+	position: absolute;
+	left: -35px;
+	top: 32px;
 	z-index: 1;
 	width: 12px;
 	height: 12px;
@@ -404,14 +381,13 @@ h3 {
 	background-color: #E5E5E5;
 	margin-bottom: 50px;
 }
-#portfolioMenu label {
 
-}
 .menuRadio {
 	display: none;
 }
 
 .radioLabel {
+	cursor: pointer;
 	width: 100px;
 	height: 50px;
 	text-align: center;
@@ -467,6 +443,9 @@ h3 {
 	height: 250px;
 }
 
+figure {
+	position: relative;
+}
 figure:not(:hover) figcaption {
 	display: none;
 }
@@ -548,7 +527,7 @@ figcaption i::before {
 	position: absolute;
 	z-index: 1;
 	width: 25%;
-	background-color: rgba(240, 245, 247, 0.80);
+	background-color: rgba(240, 245, 247, 0.85);
 	padding: 0;
 	margin: 0;
 	right: 0;
@@ -591,7 +570,7 @@ form textarea {
 }
 
 form button {
-	margin-left: 30px;
+	margin-left: 37px;
 	font-family: robotoRegular;
 	font-weight: bold;
 	color: white;

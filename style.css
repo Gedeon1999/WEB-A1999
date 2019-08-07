@@ -688,21 +688,23 @@ button:focus {
 		display: none;
 	}
 
-	h2, header p {
-		text-align: left;
-		overflow: scroll;
-		margin-left: 20px;
+	h2 {
+		margin-bottom: 25px;
 	}
 
-	#Services header p {
-		overflow: auto;
-		height: 50px;
+	h2, header p {
+		width: 400px;
+		text-align: left;
+		word-wrap: break-word;
+		margin-left: 50px;
 	}
 
 	#fixedHeader {
 		align-items: flex-start;
 		padding-left: 100px;
 	}
+
+	/*Accueil*/
 
 	#Accueil {
 		align-content: flex-start;
@@ -720,19 +722,71 @@ button:focus {
 	}
 
 	.sliderText {
-		margin-left: 20px;
-		width: 100%;
+		margin-left: 50px;
+		width: 400px;
+		position: absolute;
 		text-align: left;
+		left: 0px;
 	}
 
+	/*Services*/
+
 	.asideImg {
-		display: block;
-		text-align: left;
+		display: inline-block;
+		margin-left: -400px;
+	}
+
+	#serviceList i {
+		position: relative;
 	}
 
 	li {
+		width: 400px;
+		margin-left: -65px;
+		
+	}
+
+	li p, li h3{
+		margin-top: 50px;
+		word-wrap: break-word;
+		display: block;
+		position: relative;
+		left: 0px;
+
+	}
+
+	#serviceList i {
+		position: absolute;
+		left: 300px;
+	}
+
+	.orb {
+		position: absolute;
+		left: 295px;
+	}
+
+	/*Portfolio*/
+
+	#portfolioImages {
+		justify-content: flex-start;
+		margin-left: 12px;
+	}
+
+	#portfolioMenu {
+		align-self: flex-start;
+		margin-left: 45px;
+	}
+
+	/*Contact*/
+
+	iframe {
+		display: none;
+	}
+
+	#map form {
+		margin-top: 0;
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		position: relative;
+		width: 500px;
 	}
 }

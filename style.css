@@ -621,16 +621,13 @@ button:focus {
 		margin-top: 150px;
 		width: 600px;
 		height: 300px;
-		border-style: solid;
-		border-color: #5CADD3;
-		background-color: white;
 		align-self: center;
 		display: inline-flex;
 		justify-content: center;
 	}
 
 	.sliderText h1, .sliderText p {
-		color: black;	
+		color: white;	
 	}
 
 	.infoButton button {

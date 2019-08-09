@@ -329,8 +329,7 @@ button:focus {
 		word-wrap: break-word;
 		text-align: left;
 		list-style: none;
-		
-
+		width: 50%;
 	}
 
 	#serviceList p {
@@ -540,9 +539,8 @@ button:focus {
 	}
 
 	#map {
-		display: block;
-		padding: 0;
-		margin: 0;
+		width: 100%;
+		position: absolute;
 	}
 
 	#map form {
@@ -685,23 +683,23 @@ button:focus {
 
 	/*Services*/
 
-	.asideImg img {
-		align-self: center;
-		margin-bottom: 50px;
+	.asideImg {
+		width: 100%;
 	}
 
 	#serviceContent {
-
 		display: flex;
+		align-items: center;
 		flex-direction: column;
-		justify-content: center;
-		
 	}
 
 	#serviceList {
-		display: flex;
-		flex-wrap: wrap;
+		display: inline-flex;
 		flex-direction: column;
+		align-self: center;
+		width: 50%;
+		text-align: left;
+		margin-left: 200px;
 	}
 
 }
@@ -795,31 +793,41 @@ button:focus {
 		margin-bottom: 50px;
 		align-items: flex-start;
 	}
-
-	#serviceList  {
-		text-align: center;
-		margin-left: 5px;
+	#serviceList {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		width: 100%;
+		align-self: center;
 	}
 
-	li {
+	#serviceList  li {
+		text-align: center;
 		width: 100%;
-		
-		
 	}
 
 	li p, li h3{
 		margin-top: 50px;
 		word-wrap: break-word;
-		display: inline-flex;
-		
-
 	}
 
 	.icon {
-		position: absolute;
-		right: 35%;
-		top: -40px;
+		position: relative;
+		display: inline-flex;
+		left: 70px;
+		height: 10px;
 	}
+
+	.icon i, .orb {
+		align-self: center;
+	}
+
+	.orb {
+		position: relative;
+		top: 5px;
+	}
+
+
 
 	/*Portfolio*/
 

@@ -52,7 +52,7 @@ button:focus {
 
 
 	body {
-		min-width: 920px;
+		
 		margin: 0;
 		padding: 0;
 	}
@@ -72,7 +72,14 @@ button:focus {
 		margin: 0;
 	}
 
+	header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
 	#page {
+		width: 100%;
 		background-color: white;
 	}
 
@@ -296,22 +303,34 @@ button:focus {
 	}
 
 	.asideImg {
-		align-self: flex-start;
-		text-align: center;
+		display: flex;
+		flex: 1 1 auto;
+
+	}
+	.asideImg img {
+		margin-right: 100px;
+		margin-left: 200px;
+		min-width: 200px;
+		min-height: 100px;
 		max-width: 800px;
 		max-height: 400px;
 	}
 
 	#serviceContent {
 		display: flex;
+		width: 100%;
 		justify-content: space-around;
 		margin-top: 100px;
 	}
 
 	#serviceList {
+		flex: 0.5 1 auto;
+		padding: 0;
+		word-wrap: break-word;
 		text-align: left;
 		list-style: none;
-		max-width: 800px;	
+		
+
 	}
 
 	#serviceList p {
@@ -337,6 +356,10 @@ button:focus {
 		border-radius: 50%;
 		border-width: 1px;
 		border-color: #a3a3a3;
+	}
+
+	#serviceContent article {
+		display: flex;
 	}
 
 	.orb {
@@ -433,21 +456,21 @@ button:focus {
 
 	#portfolioImages {
 		display: flex;
+		width: 100%;
 		justify-content: center;
 		align-self: center;
 		flex-wrap: wrap;
-		min-width: 500px;
-		max-width: 1500px;
+		
 	}
 
 	#portfolioImages img {
-		display: flex;
 		width: 400px;
 		height: 250px;
 	}
 
 	figure {
 		position: relative;
+
 	}
 	figure:not(:hover) figcaption {
 		display: none;
@@ -459,8 +482,8 @@ button:focus {
 		flex-direction: column;
 		justify-content: center;
 		position: absolute;
-		margin-top: -90px;
-		width: 400px;
+		margin-top: -94px;
+		width: 100%;
 		height: 90px;
 	}
 
@@ -529,7 +552,7 @@ button:focus {
 		flex-direction: column;
 		justify-content: flex-start;
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		width: 25%;
 		background-color: rgba(240, 245, 247, 0.85);
 		padding: 0;
@@ -537,14 +560,11 @@ button:focus {
 		right: 0;
 		margin-top: 100px;
 		margin-right: 100px;
-		border-style: solid;
-		border-width: 2px;
-		border-color: #5CADD3;
 		padding-left: 40px;
 	}
 
 	iframe {
-		position: absolute;
+		position: relative;
 		z-index: 0;
 		border: none;
 		width: 100%;
@@ -559,6 +579,7 @@ button:focus {
 	}
 
 	form h3 {
+		font-family: robotoBlack;
 		margin-top: 20px;
 	}
 
@@ -590,7 +611,16 @@ button:focus {
 		border-width: 5px;
 		border-color: #4494BB;
 		border-radius: 3px;
- 	}
+	}
+
+	#mapOverlay {
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		height: 857px;
+		background-color: rgba(92, 173, 211, 0.30);
+	}
+
 }
 
 @media all and (max-width: 1100px) 
@@ -655,10 +685,9 @@ button:focus {
 
 	/*Services*/
 
-	.asideImg {
+	.asideImg img {
 		align-self: center;
 		margin-bottom: 50px;
-		margin-right: 90px;
 	}
 
 	#serviceContent {
@@ -666,7 +695,6 @@ button:focus {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-left: 100px;
 		
 	}
 
@@ -690,18 +718,29 @@ button:focus {
 
 	h2 {
 		margin-bottom: 25px;
+		text-align: center;
+		text-decoration: underline;
 	}
 
 	h2, header p {
-		width: 400px;
-		text-align: left;
-		word-wrap: break-word;
-		margin-left: 50px;
+		text-align: center;
+		word-wrap: break-word;	
 	}
 
-	#fixedHeader {
-		align-items: flex-start;
-		padding-left: 100px;
+	#Services header, #Portfolio header, #Contact header {
+		align-self: center;
+		width: 80%;
+		word-wrap: break-word;
+		text-align: center;
+	}
+
+	#fixedHeader a {
+		text-align: center;
+		
+	}
+
+	#buttonGroup a {
+		width: 4.5em;
 	}
 
 	/*Accueil*/
@@ -709,10 +748,13 @@ button:focus {
 	#Accueil {
 		align-content: flex-start;
 		width: 100%;
+		background: none;
+		background-color: #5CADD3;
 	}
 
 	#sliderHoverContent {
 		display: inline-flex;
+		text-align: center;
 		width: 100%;
 		border-left: none;
 		border-right: none;
@@ -721,72 +763,101 @@ button:focus {
 		bottom: 72px;
 	}
 
+	#sliderHoverContent h1, #sliderHoverContent p {
+		text-align: center;
+		color: black;
+	}
+
+	#sliderHoverContent strong {
+		color: white;
+	}
+
+
 	.sliderText {
-		margin-left: 50px;
-		width: 400px;
+		
+		width: 100%;
 		position: absolute;
-		text-align: left;
-		left: 0px;
+		text-align: center;
+	}
+
+	.infoButton button {
+		display: none;
 	}
 
 	/*Services*/
 
-	.asideImg {
-		display: inline-block;
-		margin-left: -400px;
+	#Services {
+		margin-bottom: 0;
 	}
 
-	#serviceList i {
-		position: relative;
+	.asideImg img {
+		margin: 0;
+		margin-bottom: 50px;
+		align-items: flex-start;
+	}
+
+	#serviceList  {
+		text-align: center;
+		margin-left: 5px;
 	}
 
 	li {
-		width: 400px;
-		margin-left: -65px;
+		width: 100%;
+		
 		
 	}
 
 	li p, li h3{
 		margin-top: 50px;
 		word-wrap: break-word;
-		display: block;
-		position: relative;
-		left: 0px;
+		display: inline-flex;
+		
 
 	}
 
-	#serviceList i {
+	.icon {
 		position: absolute;
-		left: 300px;
-	}
-
-	.orb {
-		position: absolute;
-		left: 295px;
+		right: 35%;
+		top: -40px;
 	}
 
 	/*Portfolio*/
 
 	#portfolioImages {
-		justify-content: flex-start;
-		margin-left: 12px;
+		margin-top: 50px;
+		min-width: 0px;
+	}
+
+	#portfolioImages img {
+		width: 300px;
+		height: 200px;
+		align-self: flex-start;
+		
 	}
 
 	#portfolioMenu {
-		align-self: flex-start;
-		margin-left: 45px;
+		display: none;
 	}
 
 	/*Contact*/
+
+	#Contact header {
+		
+	}
+
+	#mapOverlay {
+		display: none;
+	}
 
 	iframe {
 		display: none;
 	}
 
 	#map form {
-		margin-top: 0;
-		display: flex;
 		position: relative;
-		width: 500px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		padding-left: 20px;
 	}
 }

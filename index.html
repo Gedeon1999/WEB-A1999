@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=max-device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://kit.fontawesome.com/f1fedf774e.js"></script>
 		<title>Web Agency</title>
@@ -44,24 +44,31 @@
 					<p>Nous agissons sur plusieurs secteurs de manière à garantir le meilleur pour votre projet web.</p>
 				</header>
 				<div id="serviceContent">
-					<img class="asideImg" alt="Nos Services" src="images/main-feature.png">
+					<div class="asideImg">
+						<img alt="Nos Services" src="images/main-feature.png">
+					</div>
 					<article>
 						<ul id="serviceList">
 							<li>
-								<i class="fas fa-chart-line"></i>
-								<div class="orb"></div>
+								<div class="icon">
+									<i class="fas fa-chart-line"></i>
+									<div class="orb"></div>
+								</div
 								<h3>UX design</h3>
 								<p>Mise en place d'une stratégie, structure et surface pour créer une maquette qui répond à vos besoins.</p>
 							</li>
-							<li>
-								<i class="fas fa-cubes"></i>
-								<div class="orb"></div>
+							<li><div class="icon">
+									<i class="fas fa-cubes"></i>
+									<div class="orb"></div>
+								</div>
 								<h3>UI design</h3>
 								<p>Nous vous accompagnons dans la mise en place d'une interface intuitive et agréable pour vos utilisateurs ou clients.</p>
 							</li>
 							<li>
-								<i class="fas fa-chart-pie"></i>
-								<div class="orb"></div>
+								<div class="icon">
+									<i class="fas fa-chart-pie"></i>
+									<div class="orb"></div>
+								</div>
 								<h3>SEO</h3>
 								<p>Nous vous aidons à optimiser votre projet web aux yeux des moteurs de recherche pour permettre la plus grande couverture possible.</p>
 							</li>
@@ -172,7 +179,9 @@
 					</div>
 				</section>
 					<div id="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1564793725521!5m2!1sfr!2sfr"></iframe>
+						<div id="mapOverlay">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1564793725521!5m2!1sfr!2sfr"></iframe>
+						</div>
 						<form method="post">
 							<h3>Contact Info</h3>
 							<div>

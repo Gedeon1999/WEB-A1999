@@ -706,12 +706,12 @@ button:focus {
 
 @media all and (max-width: 750px) 
 {
-	section {
-		justify-content: flex-start;
+	#fixedHeader {
+		position: relative;
 	}
 
-	.Marge {
-		display: none;
+	section {
+		justify-content: flex-start;
 	}
 
 	h2 {
@@ -734,7 +734,6 @@ button:focus {
 
 	#fixedHeader a {
 		text-align: center;
-		
 	}
 
 	#buttonGroup a {
@@ -849,15 +848,7 @@ button:focus {
 
 	/*Contact*/
 
-	#Contact header {
-		
-	}
-
-	#mapOverlay {
-		display: none;
-	}
-
-	iframe {
+	iframe, #mapOverlay {
 		display: none;
 	}
 

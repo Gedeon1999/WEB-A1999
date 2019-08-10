@@ -475,10 +475,7 @@ button:focus {
 	}
 
 	figure:hover figcaption {
-		display: inline-flex;
 		background-color: rgb(10, 10, 10, 0.40);
-		flex-direction: column;
-		justify-content: center;
 		position: absolute;
 		margin-top: -94px;
 		width: 100%;
@@ -494,6 +491,10 @@ button:focus {
 		margin-top: 5px;
 		justify-content: flex-end;
 		
+	}
+
+	figcaption h4 {
+		margin-top: 20px;
 	}
 
 	figcaption a, figcaption i {

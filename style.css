@@ -50,7 +50,6 @@ button:focus {
 	    background: #FF0000;
 	}
 
-
 	body {
 		
 		margin: 0;
@@ -124,7 +123,7 @@ button:focus {
 
 		position: sticky;
 		top: 0;
-		z-index: 2;
+		z-index: 99;
 		width: 100%;
 		height: 150px;
 		display: flex;
@@ -531,7 +530,7 @@ button:focus {
 
 	#Contact section {
 		text-align: center;
-		padding-bottom: 25px;
+		
 	}
 
 	#Contact section p {
@@ -539,30 +538,45 @@ button:focus {
 	}
 
 	#map {
+		margin-top: 50px;
 		width: 100%;
-		position: absolute;
+		position: relative;
+		right: 0px;
+		align-items: flex-end;
+	}
+
+	.formContainer {
+		display: flex;
+		position: relative;
+		z-index: 3;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+
 	}
 
 	#map form {
 
 		font-family: robotoRegular;
-		display: inline-flex;
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		position: absolute;
-		z-index: 2;
+		position: relative;
+		align-self: center;
+		z-index: 3;
 		width: 25%;
 		background-color: rgba(240, 245, 247, 0.85);
 		padding: 0;
 		margin: 0;
-		right: 0;
+		margin-bottom: 75px;
 		margin-top: 100px;
 		margin-right: 100px;
 		padding-left: 40px;
 	}
 
 	iframe {
-		position: relative;
+		position: absolute;
+		bottom: 0;
 		z-index: 0;
 		border: none;
 		width: 100%;
@@ -614,6 +628,7 @@ button:focus {
 	#mapOverlay {
 		z-index: 1;
 		position: absolute;
+		bottom: 0;
 		width: 100%;
 		height: 857px;
 		background-color: rgba(92, 173, 211, 0.30);
@@ -864,3 +879,4 @@ button:focus {
 		margin-left: 20px;
 	}
 }
+
